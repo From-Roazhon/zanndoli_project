@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Acme', sans-serif;
+}
+
+.header__logo-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.header__logo-container__logo {
+  width: 200px;
+}
+
+.header__logo-container__title {
+  margin: 0.5rem auto 1rem auto;
+  font-size: 3rem;
+}
+
+.header__logo-container__citation {
+  quotes: "“" "”";
+  font-size: 1.3rem;
+}
+
+.header > nav {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.header > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header > nav > ul > li {
+  padding: 0.4rem;
+}
+
+.header > nav > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0.4rem;
+  padding-bottom: 0.1rem;
+}
+
+.header > nav > ul > li > a:hover {
+  border-bottom: 3px dashed green;
+}
+
+.header__random-background {
+  background-image: url("../assets/img/home/dragon.jpg");
+  background-size: cover;
+  width: 94%;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  border-radius: 5px;
+}
+
+.main {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.main__home-article > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.main__home-article h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main__home-article p {
+  text-align: justify;
+}
+
+.main__home-article__history-section {
+  margin-bottom: 3rem;
+}
+
+.main__home-article__history-section__event-background {
+  background-image: url("../assets/img/home/event.webp");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.main__home-article__history-section__cameleon-background {
+  background-image: url("../assets/img/home/cameleon.webp");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.main__home-article__actions-section > p:nth-child(2) {
+  font-weight: bold;
+}
+
+.main__home-article__adoption-section {
+  margin-top: 3rem;
+}
+
+.main__home-article__adoption-section__snake-container__flexbox {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__home-article__adoption-section__snake-container__flexbox > img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.green {
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

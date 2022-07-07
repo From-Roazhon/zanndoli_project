@@ -1,0 +1,13 @@
+{
+  "name": "projet_x2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "normal": "sass ./assets/sass/style.scss:./assets/css/style.css",
+    "minify": "sass --style compressed ./assets/sass/style.scss:./assets/css/style.css",
+    "watch": "sass --watch ./assets/sass/style.scss:./assets/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
