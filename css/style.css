@@ -84,29 +84,30 @@ h3 {
   margin: 0 auto;
 }
 
-.main__home-article > h2 {
+.main h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
-.main__home-article h3 {
+.main h3 {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.main__home-article p {
+.main p {
   text-align: justify;
 }
 
-.main__home-article__history-section {
+.main__presentation-article__history-section {
   margin-bottom: 3rem;
 }
 
-.main__home-article__history-section__event-background {
+.main__presentation-article__history-section__event-background {
   background-image: url("../assets/img/home/event.webp");
   background-size: cover;
   width: 100%;
@@ -116,7 +117,7 @@ h3 {
   border-radius: 5px;
 }
 
-.main__home-article__history-section__cameleon-background {
+.main__presentation-article__history-section__cameleon-background {
   background-image: url("../assets/img/home/cameleon.webp");
   background-size: cover;
   width: 100%;
@@ -126,18 +127,22 @@ h3 {
   border-radius: 5px;
 }
 
-.main__home-article__actions-section > p:nth-child(2) {
+.main__presentation-article__actions-section > p:nth-child(2) {
   font-weight: bold;
 }
 
-.main__home-article__adoption-section {
+.main__adoption-article {
   margin-top: 3rem;
 }
 
-.main__home-article__adoption-section__snake-container > a {
+.main__adoption-article__snake-section, .main__adoption-article__turtle-section, .main__adoption-article__lizard-section, .main__adoption-article__other-section {
+  margin-bottom: 4rem;
+}
+
+.main__adoption-article__snake-section__container > a, .main__adoption-article__turtle-section__container > a, .main__adoption-article__lizard-section__container > a, .main__adoption-article__other-section__container > a {
   text-decoration: none;
   display: block;
-  margin: 1rem auto;
+  margin: 2rem auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -152,13 +157,13 @@ h3 {
   text-align: center;
 }
 
-.main__home-article__adoption-section__snake-container > a:hover {
+.main__adoption-article__snake-section__container > a:hover, .main__adoption-article__turtle-section__container > a:hover, .main__adoption-article__lizard-section__container > a:hover, .main__adoption-article__other-section__container > a:hover {
   cursor: pointer;
   color: #fff;
   background-color: rgba(0, 128, 0, 0.8);
 }
 
-.main__home-article__adoption-section__snake-container__flexbox {
+.main__adoption-article__snake-section__container__flexbox, .main__adoption-article__turtle-section__container__flexbox, .main__adoption-article__lizard-section__container__flexbox, .main__adoption-article__other-section__container__flexbox {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   display: -webkit-box;
@@ -166,7 +171,7 @@ h3 {
   display: flex;
 }
 
-.main__home-article__adoption-section__snake-container__flexbox > img {
+.main__adoption-article__snake-section__container__flexbox > img, .main__adoption-article__turtle-section__container__flexbox > img, .main__adoption-article__lizard-section__container__flexbox > img, .main__adoption-article__other-section__container__flexbox > img {
   width: 30%;
   height: 300px;
   -o-object-fit: cover;
