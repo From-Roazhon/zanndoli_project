@@ -134,6 +134,30 @@ h3 {
   margin-top: 3rem;
 }
 
+.main__home-article__adoption-section__snake-container > a {
+  text-decoration: none;
+  display: block;
+  margin: 1rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: green;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 25px;
+  width: 40%;
+  text-align: center;
+}
+
+.main__home-article__adoption-section__snake-container > a:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 128, 0, 0.8);
+}
+
 .main__home-article__adoption-section__snake-container__flexbox {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -143,10 +167,11 @@ h3 {
 }
 
 .main__home-article__adoption-section__snake-container__flexbox > img {
-  width: 300px;
+  width: 30%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .green {
