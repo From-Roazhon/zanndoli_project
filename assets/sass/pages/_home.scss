@@ -1,7 +1,7 @@
 .header {
     &__logo-container {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 3rem;
         &__logo {
             width: 200px;
         }
@@ -145,6 +145,39 @@
 
         }
     }
+    &__horizontal-line-separator {
+        border-bottom: 2px solid black;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.footer {
+    &__article-container {
+        display: inline-block;
+        width: 30%;
+        & h2 {
+            text-align: center;
+        }
+        & ul {
+            list-style-type: "\01F422";
+            & > li {
+                & > a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+    &__contact-container {
+        display: inline-block;
+        width: 70%;
+        height: 517.043px;
+        background-color: yellow;
+        vertical-align: top;
+    }
 }
 
 .green {
@@ -153,4 +186,28 @@
 
 .bold {
     font-weight: bold;
+}
+
+.social-link-font {
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.facebook-color {
+    color: #4267B2;
+}
+
+.instagram-color {
+    background: linear-gradient(to right, #833AB4, #C13584, #E1306C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.youtube-color {
+    color: #FF0000;
+    opacity: 0.85;
 }
