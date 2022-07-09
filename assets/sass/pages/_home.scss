@@ -105,7 +105,8 @@
         &__snake-section,
         &__turtle-section,
         &__lizard-section,
-        &__other-section {
+        &__other-section,
+        &__event-section {
             margin-bottom: 4rem;
             &__container {
                 & > a {
@@ -131,11 +132,13 @@
                 &__flexbox {
                     justify-content: space-around;
                     display: flex;
+                    flex-wrap: wrap;
                     & > img {
                         width: 30%;
                         height: 300px;
                         object-fit: cover;
                         border-radius: 5px;
+                        margin: 1rem auto;
                     }
                 }
             }
@@ -146,4 +149,8 @@
 
 .green {
     color: green;
+}
+
+.bold {
+    font-weight: bold;
 }
