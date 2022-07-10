@@ -35,8 +35,8 @@ h3 {
 .header > nav {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 3px dashed green;
+  border-bottom: 3px dashed green;
 }
 
 .header > nav > ul {
@@ -59,13 +59,14 @@ h3 {
 .header > nav > ul > li > a {
   text-decoration: none;
   color: #000;
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 0.4rem;
   padding-bottom: 0.1rem;
 }
 
 .header > nav > ul > li > a:hover {
-  border-bottom: 3px dashed green;
+  color: green;
 }
 
 .header__random-background {
@@ -228,12 +229,17 @@ h3 {
   display: inline-block;
   width: 50%;
   vertical-align: top;
+  text-align: center;
 }
 
 .footer__right-block__contact-container__social-network-container__flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   gap: 2rem;
 }
 
@@ -258,13 +264,14 @@ h3 {
 
 .footer__right-block__contact-container__address-container a {
   display: block;
-  margin: 0.5rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.5rem auto;
   text-decoration: none;
   color: #444;
   font-weight: bold;
   font-style: normal;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -281,10 +288,11 @@ h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 0 auto;
   margin-top: 1rem;
   border: 3px solid green;
   border-radius: 25px;
-  padding: 0.5rem;
+  padding: 0.5rem 7rem;
   text-decoration: none;
   font-size: 1.5rem;
   color: #000;
@@ -302,6 +310,15 @@ h3 {
 }
 
 .bold {
+  font-weight: bold;
+}
+
+.leetchi-kitty {
+  font-size: 1.2rem;
+  color: green;
+}
+
+.leetchi-kitty:hover {
   font-weight: bold;
 }
 

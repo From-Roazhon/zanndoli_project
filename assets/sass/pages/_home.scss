@@ -17,8 +17,8 @@
     & > nav {
         margin-top: 4rem;
         margin-bottom: 2rem;
-        border-top: 2px solid #000;
-        border-bottom: 2px solid #000;
+        border-top: 3px dashed green;
+        border-bottom: 3px dashed green;
         & > ul {
             display: flex;
             justify-content: space-between;
@@ -31,11 +31,14 @@
                 & > a {
                     text-decoration: none;
                     color: #000;
+                    font-size: 1.1rem;
                     font-weight: bold;
                     padding: 0.4rem;
                     padding-bottom: 0.1rem;
                     &:hover {
-                        border-bottom: 3px dashed green;
+                        // border-bottom: 3px dashed green;
+                        // border-top: 3px dashed green;
+                        color: green;
                     }
                 }
             }
@@ -145,6 +148,9 @@
 
         }
     }
+    &__about-article {
+
+    }
     &__horizontal-line-separator {
         border-bottom: 2px solid black;
         width: 60%;
@@ -189,10 +195,13 @@
         display: inline-block;
         width: 50%;
         vertical-align: top;
+        text-align: center;
         &__contact-container {
             &__social-network-container {
                 &__flexbox {
                     display: flex;
+                    width: fit-content;
+                    margin: 0 auto;
                     gap: 2rem;
                     &__item {
                         & a:first-child {
@@ -214,7 +223,8 @@
                 margin: 2rem auto;
                 & a {
                     display: block;
-                    margin: 0.5rem 0;
+                    width: fit-content;
+                    margin: 0.5rem auto;
                     text-decoration: none;
                     color: #444;
                     font-weight: bold;
@@ -232,10 +242,11 @@
                 &__button {
                     display: block;
                     width: fit-content;
+                    margin: 0 auto;
                     margin-top: 1rem;
                     border: 3px solid green;
                     border-radius: 25px;
-                    padding: 0.5rem;
+                    padding: 0.5rem 7rem;
                     text-decoration: none;
                     font-size: 1.5rem;
                     color: #000;
@@ -257,6 +268,14 @@
 
 .bold {
     font-weight: bold;
+}
+
+.leetchi-kitty {
+    font-size: 1.2rem;
+    color: green;
+    &:hover {
+        font-weight: bold;
+    }
 }
 
 .social-link-font {
