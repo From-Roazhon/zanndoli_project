@@ -155,7 +155,7 @@
 }
 
 .footer {
-    margin-top: 4rem;
+    margin: 4rem auto;
     &__article-container {
         display: inline-block;
         width: 45%;
@@ -167,9 +167,20 @@
             list-style-type: "\01F422";
             padding: 0;
             & > li {
+                &:nth-child(odd) > a {
+                    color: green;
+                }
                 & > a {
                     text-decoration: none;
                     color: #000;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                & > p {
+                    font-style: italic;
                 }
             }
         }
@@ -196,6 +207,43 @@
                                 font-weight: bold;
                             }
                         }
+                    }
+                }
+            }
+            &__address-container {
+                margin: 2rem auto;
+                & a {
+                    display: block;
+                    margin: 0.5rem 0;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    font-style: normal;
+                    width: fit-content;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &__join-us-container {
+                & > p {
+                    font-weight: bold;
+                }
+                &__button {
+                    display: block;
+                    width: fit-content;
+                    margin-top: 1rem;
+                    border: 3px solid green;
+                    border-radius: 25px;
+                    padding: 0.5rem;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: #000;
+                    font-weight: bold;
+                    &:hover {
+                        border-color: #000;
+                        color: #fff;
+                        background-color: rgba(green, 0.9);
                     }
                 }
             }
@@ -232,4 +280,13 @@
 
 .youtube-color {
     color: rgba(255, 0, 0, 0.85);
+}
+
+.newsletter-anchor {
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+    &:hover {
+        text-decoration: underline;
+    }
 }
