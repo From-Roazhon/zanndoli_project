@@ -190,17 +190,19 @@ h3 {
   margin-bottom: 4rem;
 }
 
-.footer__article-container {
-  display: inline-block;
-  width: 30%;
+.footer {
+  margin-top: 4rem;
 }
 
-.footer__article-container h2 {
-  text-align: center;
+.footer__article-container {
+  display: inline-block;
+  width: 45%;
+  padding-left: 5%;
 }
 
 .footer__article-container ul {
   list-style-type: "\01F422";
+  padding: 0;
 }
 
 .footer__article-container ul > li > a {
@@ -208,12 +210,32 @@ h3 {
   color: #000;
 }
 
-.footer__contact-container {
+.footer__right-block {
   display: inline-block;
-  width: 70%;
-  height: 517.043px;
-  background-color: yellow;
+  width: 50%;
   vertical-align: top;
+}
+
+.footer__right-block__contact-container__social-network-container__flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__right-block__contact-container__social-network-container__flexbox__item a:first-child {
+  display: block;
+  padding: 1rem;
+}
+
+.footer__right-block__contact-container__social-network-container__flexbox__item a:last-child {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer__right-block__contact-container__social-network-container__flexbox__item a:last-child:hover {
+  font-weight: bold;
 }
 
 .green {
@@ -246,7 +268,6 @@ h3 {
 }
 
 .youtube-color {
-  color: #FF0000;
-  opacity: 0.85;
+  color: rgba(255, 0, 0, 0.85);
 }
 /*# sourceMappingURL=style.css.map */

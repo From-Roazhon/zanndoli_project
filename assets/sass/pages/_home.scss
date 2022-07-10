@@ -155,14 +155,17 @@
 }
 
 .footer {
+    margin-top: 4rem;
     &__article-container {
         display: inline-block;
-        width: 30%;
+        width: 45%;
+        padding-left: 5%;
         & h2 {
-            text-align: center;
+            // text-align: center;
         }
         & ul {
             list-style-type: "\01F422";
+            padding: 0;
             & > li {
                 & > a {
                     text-decoration: none;
@@ -171,12 +174,32 @@
             }
         }
     }
-    &__contact-container {
+    &__right-block {
         display: inline-block;
-        width: 70%;
-        height: 517.043px;
-        background-color: yellow;
+        width: 50%;
         vertical-align: top;
+        &__contact-container {
+            &__social-network-container {
+                &__flexbox {
+                    display: flex;
+                    gap: 2rem;
+                    &__item {
+                        & a:first-child {
+                            display: block;
+                            padding: 1rem;
+                        }
+                        & a:last-child {
+                            display: block;
+                            text-decoration: none;
+                            text-align: center;
+                            &:hover {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -208,6 +231,5 @@
 }
 
 .youtube-color {
-    color: #FF0000;
-    opacity: 0.85;
+    color: rgba(255, 0, 0, 0.85);
 }
