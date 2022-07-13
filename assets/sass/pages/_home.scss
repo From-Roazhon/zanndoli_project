@@ -142,16 +142,17 @@
                         border-radius: 5px;
                     }
                     & > .pswp-gallery {
+                        width: 100%;
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: space-around;
                         & > .item {
                             width: 30%;
                             height: 300px;
-                            border-radius: 5px;
                             & img {
                                 width: 100%;
-                                height: 100%;
+                                height: 300px;
                                 object-fit: cover;
+                                border-radius: 5px;
                             }
                         }
                     }

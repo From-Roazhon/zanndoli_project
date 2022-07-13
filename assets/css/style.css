@@ -35,6 +35,15 @@ h3 {
   height: 20px;
 }
 
+.pswp--custom-icon-colors {
+  --pswp-icon-color: rgb(0, 255, 60);
+  --pswp-icon-color-secondary: rgb(0, 255, 60);
+}
+
+.pswp--custom-bg {
+  --pswp-bg: #000;
+}
+
 .header__logo-container {
   text-align: center;
   margin-top: 3rem;
@@ -204,25 +213,25 @@ h3 {
 }
 
 .main__adoption-article__snake-section__container__flexbox > .pswp-gallery, .main__adoption-article__turtle-section__container__flexbox > .pswp-gallery, .main__adoption-article__lizard-section__container__flexbox > .pswp-gallery, .main__adoption-article__other-section__container__flexbox > .pswp-gallery, .main__adoption-article__event-section__container__flexbox > .pswp-gallery {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main__adoption-article__snake-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__turtle-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__lizard-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__other-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__event-section__container__flexbox > .pswp-gallery > .item {
   width: 30%;
   height: 300px;
-  border-radius: 5px;
 }
 
 .main__adoption-article__snake-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__turtle-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__lizard-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__other-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__event-section__container__flexbox > .pswp-gallery > .item img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .main__adoption-article__snake-section__container__flexbox > img, .main__adoption-article__turtle-section__container__flexbox > img, .main__adoption-article__lizard-section__container__flexbox > img, .main__adoption-article__other-section__container__flexbox > img, .main__adoption-article__event-section__container__flexbox > img {
