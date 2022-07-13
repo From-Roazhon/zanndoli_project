@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="./node_modules/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Zanndoli</title>
+    <!-- fave icon -->
 </head>
 <body>
     <header class="header">
@@ -53,9 +57,20 @@
                 <div class="main__adoption-article__snake-section__container">
                     <a href="#" class="main__adoption-article__snake-section__container__button">Nos serpents</a>
                     <div class="main__adoption-article__snake-section__container__flexbox">
-                        <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa">
-                        <img src="./assets/img/home/snakes/python.webp" alt="serpent python">
-                        <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé">
+                        <div class="owl-carousel owl-theme">
+                            <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
+                            <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
+                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
+                            <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
+                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
+                            <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
+                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
+                            <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
+                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -63,9 +78,36 @@
                 <div class="main__adoption-article__turtle-section__container">
                     <a href="#" class="main__adoption-article__turtle-section__container__button">Nos tortues</a>
                     <div class="main__adoption-article__turtle-section__container__flexbox">
-                        <img src="./assets/img/home/turtles/turtle_1.webp" alt="tortue">
+                        <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                            <div class="item">
+                            <a href="./assets/img/home/turtles/turtle_1.webp" 
+                              data-pswp-width="226"
+                              data-pswp-height="301"
+                              target="_blank">
+                              <img src="./assets/img/home/turtles/turtle_1.webp" alt="tortue" />
+                            </a>
+                            </div>
+                            <div class="item">
+                            <a href="./assets/img/home/turtles/turtle_2.webp" 
+                              data-pswp-width="300" 
+                              data-pswp-height="225" 
+                              target="_blank">
+                              <img src="./assets/img/home/turtles/turtle_2.webp" alt="tortue" />
+                            </a>
+                            </div>
+                            <div class="item">
+                            <a href="./assets/img/home/turtles/turtle_3.webp" 
+                              data-pswp-width="226" 
+                              data-pswp-height="301" 
+                              target="_blank">
+                              <img src="./assets/img/home/turtles/turtle_3.webp" alt="tortue" />
+                            </a>
+                            </div>
+                        </div>
+
+                        <!-- <img src="./assets/img/home/turtles/turtle_1.webp" alt="tortue">
                         <img src="./assets/img/home/turtles/turtle_2.webp" alt="tortue">
-                        <img src="./assets/img/home/turtles/turtle_3.webp" alt="tortue">
+                        <img src="./assets/img/home/turtles/turtle_3.webp" alt="tortue"> -->
                     </div>
                 </div>
             </section>
@@ -174,7 +216,7 @@
         </div>
     </div>
     </footer>
-    
-    <script src="./assets/js/main.js"></script>
+
+    <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>

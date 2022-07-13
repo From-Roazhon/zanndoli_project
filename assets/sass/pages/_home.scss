@@ -136,6 +136,25 @@
                     justify-content: space-around;
                     display: flex;
                     flex-wrap: wrap;
+                    & > .owl-carousel img {
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+                    & > .pswp-gallery {
+                        display: flex;
+                        justify-content: space-between;
+                        & > .item {
+                            width: 30%;
+                            height: 300px;
+                            border-radius: 5px;
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
                     & > img {
                         width: 30%;
                         height: 300px;

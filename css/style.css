@@ -13,6 +13,28 @@ h3 {
   font-family: 'Acme', sans-serif;
 }
 
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  font-size: 3rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #555;
+  /* linear-gradient(45deg, black, transparent); */
+  color: greenyellow;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #555;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 20px;
+}
+
 .header__logo-container {
   text-align: center;
   margin-top: 3rem;
@@ -172,6 +194,35 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.main__adoption-article__snake-section__container__flexbox > .owl-carousel img, .main__adoption-article__turtle-section__container__flexbox > .owl-carousel img, .main__adoption-article__lizard-section__container__flexbox > .owl-carousel img, .main__adoption-article__other-section__container__flexbox > .owl-carousel img, .main__adoption-article__event-section__container__flexbox > .owl-carousel img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.main__adoption-article__snake-section__container__flexbox > .pswp-gallery, .main__adoption-article__turtle-section__container__flexbox > .pswp-gallery, .main__adoption-article__lizard-section__container__flexbox > .pswp-gallery, .main__adoption-article__other-section__container__flexbox > .pswp-gallery, .main__adoption-article__event-section__container__flexbox > .pswp-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__adoption-article__snake-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__turtle-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__lizard-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__other-section__container__flexbox > .pswp-gallery > .item, .main__adoption-article__event-section__container__flexbox > .pswp-gallery > .item {
+  width: 30%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.main__adoption-article__snake-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__turtle-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__lizard-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__other-section__container__flexbox > .pswp-gallery > .item img, .main__adoption-article__event-section__container__flexbox > .pswp-gallery > .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main__adoption-article__snake-section__container__flexbox > img, .main__adoption-article__turtle-section__container__flexbox > img, .main__adoption-article__lizard-section__container__flexbox > img, .main__adoption-article__other-section__container__flexbox > img, .main__adoption-article__event-section__container__flexbox > img {

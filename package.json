@@ -1,5 +1,5 @@
 {
-  "name": "projet_x2",
+  "name": "zanndoli_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,6 +8,18 @@
     "minify": "sass --style compressed ./assets/sass/style.scss:./assets/css/style.css",
     "watch": "sass --watch ./assets/sass/style.scss:./assets/css/style.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/From-Roazhon/zanndoli_project.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/From-Roazhon/zanndoli_project/issues"
+  },
+  "homepage": "https://github.com/From-Roazhon/zanndoli_project#readme",
+  "dependencies": {
+    "owl.carousel": "^2.3.4",
+    "photoswipe": "^5.2.8"
+  }
 }

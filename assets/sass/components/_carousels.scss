@@ -1,0 +1,20 @@
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+    font-size: 3rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: #555; /* linear-gradient(45deg, black, transparent); */
+    color: greenyellow;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #555;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+}
