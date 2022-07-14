@@ -44,6 +44,49 @@ h3 {
   --pswp-bg: #000;
 }
 
+.header__display-mode {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  color: #FAFAC4;
+  border-bottom-right-radius: 5px;
+  padding: 0.4rem;
+}
+
+.header__display-mode > p {
+  display: inline-block;
+  margin: 0;
+  margin-right: 0.25rem;
+  padding: 0 0.25rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.header__display-mode > button {
+  width: 80px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0.1rem;
+}
+
+.header__display-mode > button:last-child {
+  margin-left: 0.4rem;
+}
+
+.header__display-mode > button:hover {
+  background-color: rgba(150, 220, 250, 0.95);
+}
+
 .header__logo-container {
   text-align: center;
   margin-top: 3rem;
@@ -63,14 +106,20 @@ h3 {
   font-size: 1.3rem;
 }
 
-.header > nav {
-  margin-top: 4rem;
+.nav-menu {
+  margin-top: 3rem;
   margin-bottom: 2rem;
-  border-top: 3px dashed green;
-  border-bottom: 3px dashed green;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 0.4rem 0;
 }
 
-.header > nav > ul {
+.nav-menu__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,11 +132,11 @@ h3 {
   list-style-type: none;
 }
 
-.header > nav > ul > li {
+.nav-menu__menu > li {
   padding: 0.4rem;
 }
 
-.header > nav > ul > li > a {
+.nav-menu__menu > li > a {
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -96,11 +145,11 @@ h3 {
   padding-bottom: 0.1rem;
 }
 
-.header > nav > ul > li > a:hover {
+.nav-menu__menu > li > a:hover {
   color: green;
 }
 
-.header__random-background {
+#random-background {
   background-image: url("../img/home/dragon.jpg");
   background-size: cover;
   width: 94%;

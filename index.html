@@ -15,24 +15,29 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__display-mode">
+            <p>Définir le thème : </p>
+            <button id="dark-mode">Sombre</button>
+            <button id="light-mode">Clair</button>
+        </div>
         <div class="header__logo-container">
             <img src="./assets/img/home/logo.jpg" alt="logo association Zanndoli" class="header__logo-container__logo">
             <h1 class="header__logo-container__title"><span class="green">Z</span>anndoli</h1>
             <q class="header__logo-container__citation"> Seul un esprit lézardé peut voir l'au-delà. </q>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Refuge pour reptiles</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Alimentation</a></li>
-                <li><a href="#">Fiches d'élevages</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">BenoistAquaRep</a></li>
-            </ul>
-        </nav>
-        <div class="header__random-background" id="random-background"></div>
     </header>
+    <nav class="nav-menu">
+        <ul class="nav-menu__menu">
+            <li><a href="#"><span class="green">A</span>ccueil</a></li>
+            <li><a href="#"><span class="green">R</span>efuge pour reptiles</a></li>
+            <li><a href="#"><span class="green">C</span>ontact</a></li>
+            <li><a href="#"><span class="green">A</span>limentation</a></li>
+            <li><a href="#"><span class="green">F</span>iches d'élevages</a></li>
+            <li><a href="#"><span class="green">A</span>rticles</a></li>
+            <li><a href="#"><span class="green">B</span>enoistAquaRep</a></li>
+        </ul>
+    </nav>
+    <div id="random-background"></div>
 
     <main class="main">
         <article class="main__presentation-article">
