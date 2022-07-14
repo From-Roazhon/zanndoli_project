@@ -1,11 +1,40 @@
+body {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: green;
+    --quaternary-color: #FAFAC4;
+    --quinary-color: #96dcfa;
+}
+
+body.dark-theme {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: green;
+    --quaternary-color: #000;
+    --quinary-color: #96dcfa;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h2,
+h3 {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
 .header {
-    &__display-mode {
+    &__theme-container {
         position: sticky;
         top: 0;
         display: flex;
         width: fit-content;
-        background-color: #000;
-        color: #FAFAC4;
+        background-color: var(--secondary-color);
+        color: var(--quaternary-color);
         border-bottom-right-radius: 5px;
         padding: 0.4rem;
         & > p {
@@ -15,22 +44,33 @@
             padding: 0 0.25rem;
             line-height: 1.5rem;
             font-weight: bold;
+            color: var(--quaternary-color);
         }
         & > button {
             width: 80px;
             font-weight: bold;
             cursor: pointer;
-            background-color: #fff;
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
             border: none;
             border-radius: 5px;
             padding-top: 0.1rem;
             &:last-child {
                 margin-left: 0.4rem;
             }
-            &:hover {
-                background-color: rgba(#96dcfa, 0.95);
-            }
+            // &:hover {
+                // background-color: var(--quinary-color);
+                // opacity: 0.95;
+            // }
         }
+        & > .is-active {
+            background-color: var(--quinary-color);
+            opacity: 0.95;
+        }
+        // & #light-theme-button {
+        //     background-color: var(--quinary-color);
+        //     opacity: 0.95;
+        // }
     }
     &__logo-container {
         text-align: center;
@@ -41,6 +81,7 @@
         &__title {
             margin: 0.5rem auto 1rem auto;
             font-size: 3rem;
+            color: var(--secondary-color);
         }
         &__citation {
             quotes: "“" "”";
@@ -52,11 +93,10 @@
 .nav-menu {
     margin-top: 3rem;
     margin-bottom: 2rem;
-    // border-top: 2px solid rgba(green, 0.2);
     box-shadow: 0 5px 10px rgba(#000, 0.1);
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: var(--primary-color);
     z-index: 1000;
     padding: 0.4rem 0;
     &__menu {
@@ -70,15 +110,13 @@
             padding: 0.4rem;
             & > a {
                 text-decoration: none;
-                color: #000;
+                color: var(--secondary-color);
                 font-size: 1.1rem;
                 font-weight: bold;
                 padding: 0.4rem;
                 padding-bottom: 0.1rem;
                 &:hover {
-                    // border-bottom: 3px dashed green;
-                    // border-top: 3px dashed green;
-                    color: green;
+                    color: var(--tertiary-color);
                 }
             }
         }
@@ -160,16 +198,17 @@
                     padding: 1rem;
                     font-size: 1.4rem;
                     font-weight: bold;
-                    color: green;
-                    background-color: #fff;
-                    border: 3px solid #000;
+                    color: var(--tertiary-color);
+                    background-color: var(--primary-color);
+                    border: 3px solid var(--secondary-color);
                     border-radius: 25px;
                     width: 40%;
                     text-align: center;
                     &:hover {
                         cursor: pointer;
-                        color: #fff;
-                        background-color: rgba(green, 0.8);
+                        color: var(--primary-color);
+                        background-color: var(--tertiary-color);
+                        opacity: 0.8;
                     }
                 }
                 &__flexbox {
@@ -208,11 +247,8 @@
 
         }
     }
-    &__about-article {
-
-    }
     &__horizontal-line-separator {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid var(--secondary-color);
         width: 60%;
         margin: 0 auto;
         margin-top: 5rem;
@@ -226,19 +262,16 @@
         display: inline-block;
         width: 45%;
         padding-left: 5%;
-        & h2 {
-            // text-align: center;
-        }
         & ul {
             list-style-type: "\01F422";
             padding: 0;
             & > li {
                 &:nth-child(odd) > a {
-                    color: green;
+                    color: var(--tertiary-color);
                 }
                 & > a {
                     text-decoration: none;
-                    color: #000;
+                    color: var(--secondary-color);
                     font-weight: bold;
                     font-size: 1.2rem;
                     &:hover {
@@ -304,17 +337,18 @@
                     width: fit-content;
                     margin: 0 auto;
                     margin-top: 1rem;
-                    border: 3px solid green;
+                    border: 3px solid var(--tertiary-color);
                     border-radius: 25px;
                     padding: 0.5rem 7rem;
                     text-decoration: none;
                     font-size: 1.5rem;
-                    color: #000;
+                    color: var(--secondary-color);
                     font-weight: bold;
                     &:hover {
-                        border-color: #000;
-                        color: #fff;
-                        background-color: rgba(green, 0.9);
+                        border-color: var(--secondary-color);
+                        color: var(--primary-color);
+                        background-color: var(--tertiary-color);
+                        opacity: 0.9;
                     }
                 }
             }
@@ -323,7 +357,7 @@
 }
 
 .green {
-    color: green;
+    color: var(--tertiary-color)
 }
 
 .bold {
@@ -332,7 +366,7 @@
 
 .leetchi-kitty {
     font-size: 1.2rem;
-    color: green;
+    color: var(--tertiary-color);
     &:hover {
         font-weight: bold;
     }
@@ -364,7 +398,7 @@
 .newsletter-anchor {
     text-decoration: none;
     font-weight: bold;
-    color: green;
+    color: var(--tertiary-color);
     &:hover {
         text-decoration: underline;
     }
