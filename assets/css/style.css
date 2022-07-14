@@ -50,14 +50,16 @@ body {
   --tertiary-color: green;
   --quaternary-color: #FAFAC4;
   --quinary-color: #96dcfa;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 body.dark-theme {
   --primary-color: #000;
   --secondary-color: #fff;
-  --tertiary-color: green;
+  --tertiary-color: yellowgreen;
   --quaternary-color: #000;
   --quinary-color: #96dcfa;
+  --shadow-color: rgba(154, 205, 50, 0.5);
 }
 
 body {
@@ -69,7 +71,8 @@ h3 {
   color: var(--secondary-color);
 }
 
-p {
+p,
+q {
   color: var(--secondary-color);
 }
 
@@ -121,7 +124,7 @@ p {
 
 .header__logo-container {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .header__logo-container__logo {
@@ -142,8 +145,8 @@ p {
 .nav-menu {
   margin-top: 3rem;
   margin-bottom: 2rem;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px var(--shadow-color);
+          box-shadow: 0 5px 10px var(--shadow-color);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
