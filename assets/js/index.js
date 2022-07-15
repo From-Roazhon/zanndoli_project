@@ -1,5 +1,8 @@
 import * as jquery from '../../node_modules/jquery/dist/jquery.js';
 
+import { setRandomBackground } from './setRandomBackground.js';
+setRandomBackground();
+
 import * as owlCarousel from '../../node_modules/owl.carousel/dist/owl.carousel.js';
 import { setResponsiveCarousel } from './owl_carousel/setResponsiveCarousel.js';
 setResponsiveCarousel();

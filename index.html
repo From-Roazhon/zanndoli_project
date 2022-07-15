@@ -16,9 +16,11 @@
 <body>
     <header class="header">
         <div class="header__theme-container">
-            <p>Définir le thème : </p>
-            <button class="is-active" id="light-theme-button">Clair</button>
-            <button id="dark-theme-button">Sombre</button>
+            <div class="header__theme-container__content">
+                <p>Définir le thème : </p>
+                <button class="is-active" id="light-theme-button">Clair</button>
+                <button id="dark-theme-button">Sombre</button>
+            </div>
         </div>
         <div class="header__logo-container">
             <img src="./assets/img/home/logo.png" alt="logo association Zanndoli" class="header__logo-container__logo">
@@ -37,6 +39,7 @@
             <li><a href="#"><span class="green">B</span>enoistAquaRep</a></li>
         </ul>
     </nav>
+    <!-- dépend de js donc privilégier php ? -->
     <div id="random-background"></div>
 
     <main class="main">
@@ -62,19 +65,20 @@
                 <div class="main__adoption-article__snake-section__container">
                     <a href="#" class="main__adoption-article__snake-section__container__button">Nos serpents</a>
                     <div class="main__adoption-article__snake-section__container__flexbox">
+                        <!-- owl.carousel => Si js desabled alors plus rien du tout -->
                         <div class="owl-carousel owl-theme">
                             <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
                             <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
-                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé" class="item">
                             <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
                             <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
-                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé" class="item">
                             <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
                             <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
-                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé" class="item">
                             <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa" class="item">
                             <img src="./assets/img/home/snakes/python.webp" alt="serpent python" class="item">
-                            <img src="./assets/img/home/snakes/red-snake.webp" alt="serpent rouge orangé" class="item">
+                            <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé" class="item">
                         </div>
                     </div>
                 </div>
@@ -83,6 +87,7 @@
                 <div class="main__adoption-article__turtle-section__container">
                     <a href="#" class="main__adoption-article__turtle-section__container__button">Nos tortues</a>
                     <div class="main__adoption-article__turtle-section__container__flexbox">
+                        <!-- photoswipe => Si js desabled contenu préservé !/ owl.carousel -->
                         <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
                             <div class="item">
                             <a href="./assets/img/home/turtles/turtle_1.webp" 
@@ -145,7 +150,7 @@
                     <img src="./assets/img/home/event/gecko.webp" alt="gecko">
                     <img src="./assets/img/home/event/pogona.webp" alt="pogona">
                     <img src="./assets/img/home/logo.png" alt="logo association Zanndoli" class="header__logo-container__logo">
-                    <img src="./assets/img/home/event/serpent-ratier.webp" alt="serpent-ratier">
+                    <img src="./assets/img/home/event/serpent_ratier.webp" alt="serpent-ratier">
                 </div>
             </section>
         </article>
