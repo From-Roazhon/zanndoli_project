@@ -24,5 +24,39 @@ export function setPhotoSwipeLightbox(PhotoSwipeLightbox) {
 
     const lightbox = new PhotoSwipeLightbox(options);
 
+    let firstElWithBadge;
+    let lastElWithBadge;
+
+    // Gallery is starting to open
+    lightbox.on('afterInit', () => {
+      firstElWithBadge = lightbox.pswp.currSlide.data.element;
+      hideBadge(firstElWithBadge);
+    });
+
+    // Gallery is starting to close
+    lightbox.on('close', () => {
+      lastElWithBadge = lightbox.pswp.currSlide.data.element;
+      if(lastElWithBadge !== firstElWithBadge) {
+        showBadge(firstElWithBadge);
+        hideBadge(lastElWithBadge);
+      }
+    });
+
+    // Gallery is closed
+    lightbox.on('destroy', () => {
+        showBadge(lastElWithBadge);
+    });
+
     lightbox.init();
+
+    function hideBadge(el) {
+      el.querySelector('.badge')
+        .classList
+        .add('badge--hidden');
+    };
+    function showBadge(el) {
+      el.querySelector('.badge')
+        .classList
+        .remove('badge--hidden');
+    }
 }
