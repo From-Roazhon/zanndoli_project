@@ -12,6 +12,6 @@ export function setRandomBackground() {
 
     let randomBackgroundElement = document.querySelector("#random-background");
 
-    randomBackgroundElement.style.background = `url('./assets/img/home/random/${randomBackground}')`;
+    randomBackgroundElement.style.backgroundImage = `url('./assets/img/home/random/${randomBackground}')`;
 
 }
