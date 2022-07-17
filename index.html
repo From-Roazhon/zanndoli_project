@@ -39,8 +39,14 @@
             <li><a href="#"><span class="green">B</span>enoistAquaRep</a></li>
         </ul>
     </nav>
-    <!-- dépend de js donc privilégier php ? -->
-    <div id="random-background"></div>
+    <div class="owl-carousel owl-theme">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
 
     <main class="main">
         <article class="main__presentation-article">
@@ -69,56 +75,43 @@
                 <div class="main__adoption-article__snake-section__container">
                     <a href="#" class="main__adoption-article__snake-section__container__button">Nos serpents</a>
                     <div class="main__adoption-article__snake-section__container__flexbox">
-                        <!-- owl.carousel => Si js desabled alors plus rien du tout -->
-                        <div class="owl-carousel owl-theme">
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa">
-                                <figcaption>Boa constrictor</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/python.webp" alt="serpent python">
-                                <figcaption>Python regius</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé">
-                                <figcaption>Pantherophis guttatus</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa">
-                                <figcaption>Boa constrictor</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/python.webp" alt="serpent python">
-                                <figcaption>Python regius</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé">
-                                <figcaption>Pantherophis guttatus</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa">
-                                <figcaption>Boa constrictor</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/python.webp" alt="serpent python">
-                                <figcaption>Python regius</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé">
-                                <figcaption>Pantherophis guttatus</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/boa.webp" alt="serpent boa">
-                                <figcaption>Boa constrictor</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/python.webp" alt="serpent python">
-                                <figcaption>Python regius</figcaption>
-                            </figure>
-                            <figure class="item">
-                                <img src="./assets/img/home/snakes/red_snake.webp" alt="serpent rouge orangé">
-                                <figcaption>Pantherophis guttatus</figcaption>
-                            </figure>
+                        <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                            <div class="item">
+                                <a href="./assets/img/home/snakes/boa.webp"
+                                data-pswp-width="885"
+                                data-pswp-height="819"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/snakes/boa.webp" alt="Boa constrictor" />
+                                    <div class="badge">
+                                        <p>Boa constrictor</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/img/home/snakes/python.webp"
+                                data-pswp-width="858"
+                                data-pswp-height="1144"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/snakes/python.webp" alt="Python regius" />
+                                    <div class="badge">
+                                        <p>Python regius</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/img/home/snakes/red_snake.webp"
+                                data-pswp-width="858"
+                                data-pswp-height="1144"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/snakes/red_snake.webp" alt="Pantherophis guttatus" />
+                                    <div class="badge">
+                                        <p>Pantherophis guttatus</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,49 +120,44 @@
                 <div class="main__adoption-article__turtle-section__container">
                     <a href="#" class="main__adoption-article__turtle-section__container__button">Nos tortues</a>
                     <div class="main__adoption-article__turtle-section__container__flexbox">
-                        <!-- photoswipe => Si js desabled contenu préservé !/ owl.carousel -->
                         <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
                             <div class="item">
-                            <a href="./assets/img/home/turtles/turtle_1.webp" 
-                              data-pswp-width="857"
-                              data-pswp-height="1144"
-                              target="_blank"
-                              data-cropped="true">
-                              <img src="./assets/img/home/turtles/turtle_1.webp" alt="tortue" />
-                              <div class="badge">
-                                <p>Sternotherus carinatus</p>
-                              </div>
-                            </a>
+                                <a href="./assets/img/home/turtles/turtle_1.webp" 
+                                data-pswp-width="857"
+                                data-pswp-height="1144"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/turtles/turtle_1.webp" alt="Sternotherus carinatus" />
+                                    <div class="badge">
+                                        <p>Sternotherus carinatus</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="item">
-                            <a href="./assets/img/home/turtles/turtle_2.webp" 
-                              data-pswp-width="1526" 
-                              data-pswp-height="1144" 
-                              target="_blank"
-                              data-cropped="true">
-                              <img src="./assets/img/home/turtles/turtle_2.webp" alt="tortue" />
-                              <div class="badge">
-                                <p>Mauremis sinensis</p>
-                              </div>
-                            </a>
+                                <a href="./assets/img/home/turtles/turtle_2.webp" 
+                                data-pswp-width="1526" 
+                                data-pswp-height="1144" 
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/turtles/turtle_2.webp" alt="Mauremis sinensis" />
+                                    <div class="badge">
+                                        <p>Mauremis sinensis</p>
+                                    </div>
+                                </a>
                             </div>
                             <div class="item">
-                            <a href="./assets/img/home/turtles/turtle_3.webp" 
-                              data-pswp-width="857" 
-                              data-pswp-height="1144" 
-                              target="_blank"
-                              data-cropped="true">
-                              <img src="./assets/img/home/turtles/turtle_3.webp" alt="tortue" />
-                              <div class="badge">
-                                <p>Pelomedusa subrafa</p>
-                              </div>
-                            </a>
+                                <a href="./assets/img/home/turtles/turtle_3.webp" 
+                                data-pswp-width="857" 
+                                data-pswp-height="1144" 
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/turtles/turtle_3.webp" alt="Pelomedusa subrafa" />
+                                    <div class="badge">
+                                        <p>Pelomedusa subrafa</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-
-                        <!-- <img src="./assets/img/home/turtles/turtle_1.webp" alt="tortue">
-                        <img src="./assets/img/home/turtles/turtle_2.webp" alt="tortue">
-                        <img src="./assets/img/home/turtles/turtle_3.webp" alt="tortue"> -->
                     </div>
                 </div>
             </section>
@@ -177,9 +165,44 @@
                 <div class="main__adoption-article__lizard-section__container">
                     <a href="#" class="main__adoption-article__lizard-section__container__button">Nos lézards</a>
                     <div class="main__adoption-article__lizard-section__container__flexbox">
-                        <img src="./assets/img/home/lizards/tiliqua.webp" alt="tiliqua">
-                        <img src="./assets/img/home/lizards/pogona.webp" alt="pogona">
-                        <img src="./assets/img/home/lizards/gecko.webp" alt="gecko">
+                        <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                            <div class="item">
+                                <a href="./assets/img/home/lizards/tiliqua.webp"
+                                data-pswp-width="858"
+                                data-pswp-height="1144"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/lizards/tiliqua.webp" alt="Tiliquas" />
+                                    <div class="badge">
+                                        <p>Tiliquas</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/img/home/lizards/pogona.webp"
+                                data-pswp-width="912"
+                                data-pswp-height="684"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/lizards/pogona.webp" alt="Pogona vitticeps" />
+                                    <div class="badge">
+                                        <p>Pogona vitticeps</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="./assets/img/home/lizards/gecko.webp"
+                                data-pswp-width="1526"
+                                data-pswp-height="1144"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/lizards/gecko.webp"" alt="Correlophus ciliatus" />
+                                    <div class="badge">
+                                        <p>Correlophus ciliatus</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -187,7 +210,20 @@
                 <div class="main__adoption-article__other-section__container">
                     <a href="#" class="main__adoption-article__other-section__container__button">Nos autres animaux</a>
                     <div class="main__adoption-article__other-section__container__flexbox">
-                        <img src="./assets/img/home/other_species/axolotl.webp" alt="axolotl">
+                        <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                            <div class="item">
+                                <a href="./assets/img/home/other_species/axolotl.webp"
+                                data-pswp-width="298"
+                                data-pswp-height="300"
+                                target="_blank"
+                                data-cropped="true">
+                                    <img src="./assets/img/home/other_species/axolotl.webp" alt="Axolotl" />
+                                    <div class="badge">
+                                        <p>Axolotl</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

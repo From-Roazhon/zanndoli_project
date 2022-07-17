@@ -1,14 +1,3 @@
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel button.owl-dot {
-    font-size: 3rem;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-    width: 20px;
-    height: 20px;
-}
-
 // .owl-theme .owl-nav [class*='owl-']:hover {
 //     background: #555; /* linear-gradient(45deg, black, transparent); */
 //     color: greenyellow;
@@ -18,3 +7,73 @@
 // .owl-theme .owl-dots .owl-dot:hover span {
 //     background: #555;
 // }
+
+// .owl-theme .owl-dots .owl-dot span {
+//     width: 20px;
+//     height: 20px;
+// }
+
+// .owl-theme .owl-dots .owl-dot span{
+//     background: var(--secondary-color);
+//     opacity: 0.5;    
+// }
+
+// .owl-theme .owl-dots .owl-dot.active span,
+// .owl-theme .owl-dots .owl-dot:hover span {
+//     background: var(--secondary-color);
+//     opacity: 1;
+// }
+
+.owl-carousel {
+    position: relative;
+    & .owl-item {
+        & .item {
+            background-color: #fff;
+            background-size: cover;
+            width: 90%;
+            height: 400px;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            margin-top: 3.5rem;
+            border-radius: 5px;
+        }
+        &:nth-child(1) > .item {
+            background-image: url('../img/home/random/pogona.jpg');
+        }
+        &:nth-child(2) > .item  {
+            background-image: url('../img/home/random/snake_2.jpg');
+        }
+        &:nth-child(3) > .item  {
+            background-image: url('../img/home/random/pogona_3.png');
+        }
+        &:nth-child(4) > .item  {
+            background-image: url('../img/home/random/gecko.jpg');
+        }
+        &:nth-child(5) > .item  {
+            background-image: url('../img/home/random/snake.jpg');
+        }
+        &:nth-child(6) > .item  {
+            background-image: url('../img/home/random/pogona_2.jpg');
+        }
+    }
+    & .owl-nav {
+        & > button[class^="owl-"] {
+            position: absolute;
+            top: 45%;
+            font-size: 5rem;
+            margin: 0;
+            padding-bottom: 0.5rem !important;;
+            color: var(--secondary-color);
+            &:hover {
+                background: var(--secondary-color);
+                color: var(--primary-color);
+            }
+        }
+        & .owl-prev {
+            left: 1.5%;
+        }
+        & .owl-next {
+            right: 1.5%;
+        }
+    }
+}

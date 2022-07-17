@@ -9,15 +9,16 @@ function setResponsiveCarousel() {
                 nav:true
             },
             600:{
-                items:2,
+                items:1,
                 nav:false
             },
             1000:{
-                items:3,
+                items:1,
                 nav:true,
                 loop:false
             }
-        }
+        },
+        dots: false
     })
 }
 

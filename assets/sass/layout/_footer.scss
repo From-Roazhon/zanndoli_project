@@ -1,0 +1,139 @@
+.footer {
+    &__separator {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 98%;
+        height: 2px;
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    }
+    margin: 3rem auto;
+    padding-top: 2rem;
+    &__article-container {
+        display: inline-block;
+        width: 45%;
+        padding-left: 5%;
+        & ul {
+            list-style-type: "\01F422";
+            padding: 0;
+            & > li {
+                &:nth-child(odd) > a {
+                    color: var(--tertiary-color);
+                }
+                & > a {
+                    text-decoration: none;
+                    color: var(--secondary-color);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                & > p {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    &__right-block {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        text-align: center;
+        &__contact-container {
+            &__social-network-container {
+                &__flexbox {
+                    display: flex;
+                    width: fit-content;
+                    margin: 0 auto;
+                    gap: 2rem;
+                    &__item {
+                        & a:first-child {
+                            display: block;
+                            padding: 1rem;
+                        }
+                        & a:last-child {
+                            display: block;
+                            text-decoration: none;
+                            text-align: center;
+                            &:hover {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            &__address-container {
+                margin: 2rem auto;
+                & a {
+                    display: block;
+                    width: fit-content;
+                    margin: 0.5rem auto;
+                    text-decoration: none;
+                    color: #444;
+                    font-weight: bold;
+                    font-style: normal;
+                    width: fit-content;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &__join-us-container {
+                & > p {
+                    font-weight: bold;
+                }
+                &__button {
+                    display: block;
+                    width: fit-content;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                    border: 3px solid var(--tertiary-color);
+                    border-radius: 25px;
+                    padding: 0.5rem 7rem;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    color: var(--secondary-color);
+                    font-weight: bold;
+                    &:hover {
+                        border-color: var(--secondary-color);
+                        color: var(--primary-color);
+                        background-color: var(--tertiary-color);
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-link-font {
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+.facebook-color {
+    color: #4267B2;
+}
+
+.instagram-color {
+    background: linear-gradient(to right, #833AB4, #C13584, #E1306C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.youtube-color {
+    color: rgba(255, 0, 0, 0.85);
+}
+
+.newsletter-anchor {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    &:hover {
+        text-decoration: underline;
+    }
+}
