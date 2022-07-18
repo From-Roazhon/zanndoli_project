@@ -24,6 +24,9 @@
 //     opacity: 1;
 // }
 
+// to do :
+// prev and next buttons under the background when this one moves
+
 .owl-carousel {
     position: relative;
     & .owl-item {
@@ -65,21 +68,24 @@
     & .owl-nav {
         & > button[class^="owl-"] {
             position: absolute;
-            top: 45%;
-            font-size: 5rem;
+            top: 40%;
+            font-size: 7rem;
             margin: 0;
             padding-bottom: 0.5rem !important;;
             color: var(--secondary-color);
+            opacity: 0.5;
+            background: none;
             &:hover {
-                background: var(--secondary-color);
-                color: var(--primary-color);
+                background: none;
+                color: var(--secondary-color);
+                opacity: 0.8;
             }
         }
         & .owl-prev {
-            left: 1.5%;
+            left: 1%;
         }
         & .owl-next {
-            right: 1.5%;
+            right: 1%;
         }
     }
 }
