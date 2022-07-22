@@ -4,12 +4,13 @@
         top: 0;
         margin: 0;
         margin-top: 1rem;
+        margin-left: 1rem;
         width: fit-content;
         background-color: var(--theme-border-color);
-        border: 0.5rem solid var(--theme-border-color);
-        border-left: none;
-        border-bottom-right-radius: 5px;
-        border-top-right-radius: 5px;
+        border: 0.25rem solid var(--theme-border-color);
+        border-radius: 5px;
+        // border-top-left-radius: unset;
+        // border-left: none;
         &__content {
             display: flex;
             width: fit-content;
