@@ -18,6 +18,42 @@ body {
   margin: 0 auto;
 }
 
+body {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --tertiary-color: green;
+  --quaternary-color: #FAFAC4;
+  --quinary-color: #96dcfa;
+  --theme-background-color: #FAFAC4;
+  --theme-border-color: #000;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --tertiary-color: yellowgreen;
+  --quaternary-color: yellowgreen;
+  --quinary-color: #96dcfafa;
+  --theme-background-color: #000;
+  --theme-border-color: #fafac4ca;
+  --shadow-color: rgba(154, 205, 50, 0.5);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+h2,
+h3 {
+  color: var(--secondary-color);
+}
+
+p,
+q {
+  color: var(--secondary-color);
+}
+
 .main {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,29 +72,53 @@ body {
   margin-top: 3.5rem;
   border-radius: 5px;
 }
-.owl-carousel .owl-item:nth-child(3) > .item {
-  background-image: url("../img/home/random/pogona_2.jpg");
-}
-.owl-carousel .owl-item:nth-child(4) > .item {
-  background-image: url("../img/home/random/pogona.jpg");
-}
-.owl-carousel .owl-item:nth-child(5) > .item {
-  background-image: url("../img/home/random/snake_2.jpg");
-}
-.owl-carousel .owl-item:nth-child(6) > .item {
-  background-image: url("../img/home/random/pogona_3.png");
-}
-.owl-carousel .owl-item:nth-child(7) > .item {
-  background-image: url("../img/home/random/gecko.jpg");
-}
-.owl-carousel .owl-item:nth-child(8) > .item {
+.owl-carousel .owl-item:nth-child(1) > .item {
   background-image: url("../img/home/random/snake.jpg");
 }
-.owl-carousel .owl-item:nth-child(9) > .item {
+.owl-carousel .owl-item:nth-child(2) > .item {
+  background-image: url("../img/home/random/turtle.jpg");
+}
+.owl-carousel .owl-item:nth-child(3) > .item {
+  background-image: url("../img/home/random/gecko_2.webp");
+}
+.owl-carousel .owl-item:nth-child(4) > .item {
   background-image: url("../img/home/random/pogona_2.jpg");
 }
+.owl-carousel .owl-item:nth-child(5) > .item {
+  background-image: url("../img/home/random/pogona.jpg");
+}
+.owl-carousel .owl-item:nth-child(6) > .item {
+  background-image: url("../img/home/random/snake_2.jpg");
+}
+.owl-carousel .owl-item:nth-child(7) > .item {
+  background-image: url("../img/home/random/pogona_3.png");
+}
+.owl-carousel .owl-item:nth-child(8) > .item {
+  background-image: url("../img/home/random/gecko.jpg");
+}
+.owl-carousel .owl-item:nth-child(9) > .item {
+  background-image: url("../img/home/random/snake.jpg");
+}
 .owl-carousel .owl-item:nth-child(10) > .item {
+  background-image: url("../img/home/random/turtle.jpg");
+}
+.owl-carousel .owl-item:nth-child(11) > .item {
+  background-image: url("../img/home/random/gecko_2.webp");
+}
+.owl-carousel .owl-item:nth-child(12) > .item {
   background-image: url("../img/home/random/pogona_2.jpg");
+}
+.owl-carousel .owl-item:nth-child(13) > .item {
+  background-image: url("../img/home/random/pogona.jpg");
+}
+.owl-carousel .owl-item:nth-child(14) > .item {
+  background-image: url("../img/home/random/snake_2.jpg");
+}
+.owl-carousel .owl-item:nth-child(15) > .item {
+  background-image: url("../img/home/random/pogona_3.png");
+}
+.owl-carousel .owl-item:nth-child(16) > .item {
+  background-image: url("../img/home/random/gecko.jpg");
 }
 .owl-carousel .owl-nav > button[class^=owl-] {
   position: absolute;
@@ -304,7 +364,7 @@ body {
   width: fit-content;
   margin: 0.5rem auto;
   text-decoration: none;
-  color: #444;
+  color: var(--secondary-color);
   font-weight: bold;
   font-style: normal;
   width: fit-content;
@@ -403,51 +463,13 @@ body {
   color: var(--tertiary-color);
 }
 
-body {
-  --primary-color: #fff;
-  --secondary-color: #000;
-  --tertiary-color: green;
-  --quaternary-color: #FAFAC4;
-  --quinary-color: #96dcfa;
-  --theme-background-color: #FAFAC4;
-  --theme-border-color: #000;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-}
-
-body.dark-theme {
-  --primary-color: #000;
-  --secondary-color: #fff;
-  --tertiary-color: yellowgreen;
-  --quaternary-color: yellowgreen;
-  --quinary-color: #96dcfafa;
-  --theme-background-color: #000;
-  --theme-border-color: #fafac4ca;
-  --shadow-color: rgba(154, 205, 50, 0.5);
-}
-
-body {
-  background-color: var(--primary-color);
-}
-
-h2,
-h3 {
-  color: var(--secondary-color);
-}
-
-p,
-q {
-  color: var(--secondary-color);
-}
-
 .main h2 {
-  text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 .main h3 {
-  text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
@@ -537,7 +559,7 @@ q {
 }
 
 .leetchi-kitty {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--tertiary-color);
 }
 .leetchi-kitty:hover {

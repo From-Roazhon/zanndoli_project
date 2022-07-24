@@ -4,6 +4,46 @@ body {
     margin: 0 auto;
 }
 
+body {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: green;
+    --quaternary-color: #FAFAC4;
+    --quinary-color: #96dcfa;
+
+    --theme-background-color: #FAFAC4;
+    --theme-border-color: #000;
+    
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: yellowgreen;
+    --quaternary-color: yellowgreen;
+    --quinary-color: #96dcfafa;
+
+    --theme-background-color: #000;
+    --theme-border-color: #fafac4ca;
+
+    --shadow-color: rgba(154, 205, 50, 0.5);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+h2,
+h3 {
+    color: var(--secondary-color);
+}
+
+p,
+q {
+    color: var(--secondary-color);
+}
+
 .main {
     // width: 94%;
     max-width: 1280px;

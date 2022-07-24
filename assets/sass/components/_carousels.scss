@@ -40,29 +40,53 @@
             margin-top: 3.5rem;
             border-radius: 5px;
         }
-        &:nth-child(3) > .item  {
-            background-image: url('../img/home/random/pogona_2.jpg');
-        }
-        &:nth-child(4) > .item {
-            background-image: url('../img/home/random/pogona.jpg');
-        }
-        &:nth-child(5) > .item  {
-            background-image: url('../img/home/random/snake_2.jpg');
-        }
-        &:nth-child(6) > .item  {
-            background-image: url('../img/home/random/pogona_3.png');
-        }
-        &:nth-child(7) > .item  {
-            background-image: url('../img/home/random/gecko.jpg');
-        }
-        &:nth-child(8) > .item  {
+        &:nth-child(1) > .item  {
             background-image: url('../img/home/random/snake.jpg');
         }
-        &:nth-child(9) > .item  {
+        &:nth-child(2) > .item  {
+            background-image: url('../img/home/random/turtle.jpg');
+        }
+        &:nth-child(3) > .item  {
+            background-image: url('../img/home/random/gecko_2.webp');
+        }
+        &:nth-child(4) > .item  {
             background-image: url('../img/home/random/pogona_2.jpg');
         }
+        &:nth-child(5) > .item {
+            background-image: url('../img/home/random/pogona.jpg');
+        }
+        &:nth-child(6) > .item  {
+            background-image: url('../img/home/random/snake_2.jpg');
+        }
+        &:nth-child(7) > .item  {
+            background-image: url('../img/home/random/pogona_3.png');
+        }
+        &:nth-child(8) > .item  {
+            background-image: url('../img/home/random/gecko.jpg');
+        }
+        &:nth-child(9) > .item  {
+            background-image: url('../img/home/random/snake.jpg');
+        }
         &:nth-child(10) > .item  {
+            background-image: url('../img/home/random/turtle.jpg');
+        }
+        &:nth-child(11) > .item  {
+            background-image: url('../img/home/random/gecko_2.webp');
+        }
+        &:nth-child(12) > .item  {
             background-image: url('../img/home/random/pogona_2.jpg');
+        }
+        &:nth-child(13) > .item {
+            background-image: url('../img/home/random/pogona.jpg');
+        }
+        &:nth-child(14) > .item  {
+            background-image: url('../img/home/random/snake_2.jpg');
+        }
+        &:nth-child(15) > .item  {
+            background-image: url('../img/home/random/pogona_3.png');
+        }
+        &:nth-child(16) > .item  {
+            background-image: url('../img/home/random/gecko.jpg');
         }
     }
     & .owl-nav {
