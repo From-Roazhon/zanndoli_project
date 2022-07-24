@@ -1,0 +1,22 @@
+.main {
+    &__species-list {
+        padding: 0;
+        list-style-type: none;
+        margin-left: 1rem;
+        &__specie {
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            margin: 1rem 0;
+            border: 2px solid var(--secondary-color);
+            border-radius: 5px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            padding: 1rem;
+            &:hover {
+                background-color: var(--quaternary-color);
+                color: var(--quinary-color);
+            }
+        }
+    }
+}

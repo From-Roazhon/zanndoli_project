@@ -1,0 +1,7 @@
+.main {
+    &__specie {
+        & > img {
+            max-width: -webkit-fill-available;
+        }
+    }
+}
